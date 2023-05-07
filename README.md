@@ -19,3 +19,20 @@ For example, suppose we have the sentence: "The cat sat on the [MASK]." If we gi
 The MASK task is used during pre-training to help BERT learn contextualized word embeddings, which are representations of words that capture their meaning in context. By predicting the masked tokens, BERT learns to understand how words relate to each other in a sentence and how their meaning can change based on the context in which they are used. This knowledge can then be applied to a wide range of downstream NLP tasks, such as sentiment analysis, question answering, and language translation.
 
 We will use this trick and get the predictions of the model for a given sentence. Then we will mask a word and see what are the prediction. Let's see how we can do this.
+
+```
+1. He is a good footbal player. The word 'He' is predicted with a probability of 60.0%
+2. She is a good footbal player. The word 'She' is predicted with a probability of 8.95%
+3. he is a good footbal player. The word 'he' is predicted with a probability of 0.68%
+4. . is a good footbal player. The word '.' is predicted with a probability of 0.59%
+5. It is a good footbal player. The word 'It' is predicted with a probability of 0.28%
+6. David is a good footbal player. The word 'David' is predicted with a probability of 0.2%
+7. John is a good footbal player. The word 'John' is predicted with a probability of 0.19%
+8. Michael is a good footbal player. The word 'Michael' is predicted with a probability of 0.18%
+9. Joe is a good footbal player. The word 'Joe' is predicted with a probability of 0.15%
+10. and is a good footbal player. The word 'and' is predicted with a probability of 0.14%
+```
+![Top 10 words for the masked word](https://user-images.githubusercontent.com/27974341/236682249-0617b42c-e1ef-4706-818e-4b3b5b01313a.svg)
+
+
+
