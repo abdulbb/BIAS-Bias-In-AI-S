@@ -32,7 +32,5 @@ We will use this trick and get the predictions of the model for a given sentence
 9. I is a good football player. The word 'I' is predicted with a probability of 0.15%
 10. It is a good football player. The word 'It' is predicted with a probability of 0.14%
 ```
-![Top 10 words for the masked word](https://user-images.githubusercontent.com/27974341/236682249-0617b42c-e1ef-4706-818e-4b3b5b01313a.svg)
 
-
-
+![Top 10 words for the masked word](https://user-images.githubusercontent.com/27974341/236683293-23e70031-63c3-4ff9-ab45-11e6e0b9cc49.svg)
